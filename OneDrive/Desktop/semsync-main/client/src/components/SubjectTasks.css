@@ -1,0 +1,122 @@
+/* SubjectTasks.css */
+
+.subject-tasks-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.subject-tasks-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.subject-tasks-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.subject-tasks-column {
+  flex-shrink: 0;
+  width: 18rem;
+  border-radius: 0.75rem;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subject-tasks-column-completed {
+  background-color: #e0e0e0;
+}
+
+.subject-tasks-column-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.subject-tasks-item {
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.subject-tasks-item-completed {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+  text-decoration: line-through;
+  color: #666;
+}
+
+.subject-tasks-input {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #999;
+  padding: 0.25rem;
+  color: #333;
+}
+
+.subject-tasks-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subject-tasks-priority {
+  margin-left: 0.5rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.subject-tasks-delete-button {
+  margin-left: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #ef4444;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.subject-tasks-delete-button:hover {
+  background-color: #dc2626;
+}
+
+.subject-tasks-add-section {
+  margin-top: 1rem;
+}
+
+.subject-tasks-add-input {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  color: #333;
+}
+
+.subject-tasks-add-button {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: #e6e6fa;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.subject-tasks-add-button:hover {
+  background-color: rgba(230, 230, 250, 0.9);
+} 

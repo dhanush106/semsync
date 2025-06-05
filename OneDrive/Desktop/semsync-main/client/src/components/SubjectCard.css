@@ -1,0 +1,74 @@
+/* SubjectCard.css */
+
+.subject-card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.subject-card:hover {
+  transform: scale(1.02);
+}
+
+.subject-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.subject-card-credits {
+  font-size: 0.875rem;
+  color: rgba(51, 51, 51, 0.8);
+  margin-top: 0.25rem;
+}
+
+.subject-card-description {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.subject-card-actions {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.subject-card-edit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #e6f7ff;
+  color: #0066cc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.subject-card-edit-button:hover {
+  background-color: #b3e0ff;
+  color: #004d99;
+}
+
+.subject-card-delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #ffe6e6;
+  color: #cc0000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.subject-card-delete-button:hover {
+  background-color: #ffb3b3;
+  color: #990000;
+} 

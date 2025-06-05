@@ -1,0 +1,63 @@
+/* Subjects.css */
+
+.subjects-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.subjects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subjects-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-subject-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #e6e6fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.add-subject-button:hover {
+  background-color: rgba(230, 230, 250, 0.9);
+}
+
+.subjects-description {
+  color: #666;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .subjects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .subjects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} 

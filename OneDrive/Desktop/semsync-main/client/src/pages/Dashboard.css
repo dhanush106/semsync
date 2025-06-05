@@ -1,0 +1,130 @@
+/* Dashboard.css */
+
+.dashboard-error {
+  padding: 1.5rem;
+  color: #ef4444;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.dashboard-subjects-section {
+  grid-column: span 1;
+  overflow-y: auto;
+  height: 13rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .dashboard-subjects-section {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-subjects-section {
+    grid-column: span 3;
+  }
+}
+
+.dashboard-subjects-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-subjects-empty {
+  color: #666;
+}
+
+.dashboard-subjects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.dashboard-subject-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-subject-title {
+  font-weight: 500;
+  color: #333;
+}
+
+.dashboard-subject-progress {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.dashboard-subject-progress-bar-container {
+  width: 100%;
+  height: 1rem;
+  background-color: #e0e0e0;
+  border-radius: 9999px;
+}
+
+.dashboard-subject-progress-bar {
+  height: 1rem;
+  border-radius: 9999px;
+  background-color: #666;
+}
+
+.dashboard-activity-section {
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-activity-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.dashboard-activity-empty {
+  color: #666;
+}
+
+.dashboard-actions-section {
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-actions-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.dashboard-actions-empty {
+  color: #666;
+} 

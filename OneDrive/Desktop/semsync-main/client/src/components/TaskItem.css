@@ -1,0 +1,114 @@
+/* TaskItem.css */
+
+.task-item {
+  position: relative;
+  padding: 1rem;
+  border-radius: 1.875rem;
+  cursor: grab;
+  transition: opacity 0.2s;
+}
+
+.task-item:active {
+  cursor: grabbing;
+}
+
+.task-item-dragging {
+  opacity: 0.5;
+}
+
+.task-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.task-item-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.25rem;
+  background-color: #f5f5f5;
+  color: #333;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+  border: none;
+  outline: none;
+}
+
+.task-item-input:focus {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.1), inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
+
+.task-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-item-button {
+  color: #666;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.task-item-button:hover {
+  color: #333;
+}
+
+.task-item-button-secondary {
+  color: #999;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.task-item-button-secondary:hover {
+  color: #666;
+}
+
+.task-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item-title {
+  flex: 1;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.task-item-title:hover {
+  color: #666;
+}
+
+.task-item-completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-item-meta {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.task-item-date {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.task-item-priority {
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.task-item-priority-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.25rem;
+  border-top-left-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+  background-color: #666;
+} 

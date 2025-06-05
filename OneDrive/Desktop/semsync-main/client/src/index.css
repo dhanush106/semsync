@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* 1. Theme Tokens */
+@theme {
+  /* Claymorphism Color Palette */
+  --color-clay-50: #faf6f6;
+  --color-clay-100: #f5edec;
+  --color-clay-200: #eedfdd;
+  --color-clay-300: #e4cdca;
+  --color-clay-400: #d8b8b4;
+  --color-clay-500: #c9a19c;
+  --color-clay-600: #b88a84;
+  --color-clay-700: #a4736c;
+  --color-clay-800: #8f5d55;
+  --color-clay-900: #7a473e;
+
+  --color-pastel-mint: #d1f7e8;
+  --color-pastel-lavender: #e8d7f7;
+  --color-pastel-peach: #ffd8c5;
+  --color-pastel-sky: #d1e9ff;
+  --color-pastel-butter: #fff2d1;
+  --color-pastel-rose: #ffd1e8;
+  --color-pastel-pistachio: #e8f7d1;
+
+  --shadow-clay-sm: 
+    8px 8px 16px rgba(0, 0, 0, 0.1),
+    -8px -8px 16px rgba(255, 255, 255, 0.7);
+  --shadow-clay-md: 
+    12px 12px 24px rgba(0, 0, 0, 0.1),
+    -12px -12px 24px rgba(255, 255, 255, 0.7);
+  --shadow-clay-lg: 
+    16px 16px 32px rgba(0, 0, 0, 0.1),
+    -16px -16px 32px rgba(255, 255, 255, 0.7);
+
+  --radius-clay-sm: 20px;
+  --radius-clay-md: 30px;
+  --radius-clay-lg: 40px;
+
+  --bg-clay-primary: linear-gradient(145deg, var(--color-clay-100), var(--color-clay-200));
+  --bg-clay-secondary: linear-gradient(145deg, var(--color-pastel-mint), var(--color-pastel-sky));
+
+  --text-clay-primary: var(--color-clay-800);
+  --text-clay-secondary: var(--color-clay-600);
+}
+
+/* 2. Component Classes */
+.btn-clay {
+  border-radius: var(--radius-clay-md);
+  background: var(--bg-clay-primary);
+  box-shadow: var(--shadow-clay-sm);
+  color: var(--text-clay-primary);
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-clay:hover {
+  box-shadow: var(--shadow-clay-md);
+  transform: translateY(-2px);
+}
+.btn-clay:active {
+  box-shadow: var(--shadow-clay-sm);
+  transform: translateY(0);
+}
+
+.card-clay {
+  border-radius: var(--radius-clay-md);
+  background: var(--bg-clay-primary);
+  box-shadow: var(--shadow-clay-md);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.card-clay:hover {
+  box-shadow: var(--shadow-clay-lg);
+  transform: translateY(-4px);
+}
+
+.input-clay {
+  border-radius: var(--radius-clay-sm);
+  background: var(--color-clay-50);
+  box-shadow: 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 0.75rem 1rem;
+}
+.input-clay:focus {
+  outline: none;
+  box-shadow: 
+    inset 6px 6px 12px rgba(0, 0, 0, 0.1),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
+
+body {
+  background: var(--bg-clay-secondary);
+  color: var(--text-clay-primary);
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+
+/* Add this to your index.css or Tailwind layer if needed */
+* {
+  touch-action: manipulation;
+  -webkit-user-drag: none;
+}
